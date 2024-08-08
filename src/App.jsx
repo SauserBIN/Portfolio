@@ -12,6 +12,7 @@ import ProjectDetail3 from './pages/ProjectDetail3';
 import ProjectDetail4 from './pages/ProjectDetail4';
 import ProjectDetail5 from './pages/ProjectDetail5';
 import ProjectDetail6 from './pages/ProjectDetail6';
+import ProjectDetail7 from './pages/ProjectDetail7';
 import WebCloning from './pages/WebCloning';
 import WebCloningDetail from './pages/WebCloningDetail';
 import Contact from './pages/Contact';
@@ -35,6 +36,7 @@ const App = () => {
     <Route path="/project-detail/4" element={<ProjectDetail4 />} />
     <Route path="/project-detail/5" element={<ProjectDetail5 />} />
     <Route path="/project-detail/6" element={<ProjectDetail6 />} />
+    <Route path="/project-detail/7" element={<ProjectDetail7 />} />
     <Route path="/webcloning" element={<WebCloning />} />
     <Route path="/webcloning-detail/:id" element={<WebCloningDetail />} />
     <Route path="/contact" element={<Contact />} />

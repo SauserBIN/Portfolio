@@ -8,12 +8,15 @@ const Header = () => {
     const [latestProjects, setLatestProjects] = useState([]);
 
     useEffect(() => {
-        // Combine and sort project data by id (descending)
         const allProjects = [...projectData, ...webCloningData];
         allProjects.sort((a, b) => b.id - a.id);
 
-        // Get the latest 2 projects
-        setLatestProjects(allProjects.slice(0, 2));
+        const latest = allProjects.slice(0, 2).map(project => ({
+            ...project,
+            category: project.category === 'ToyProject' ? 'MainProject' : project.category
+        }));
+
+        setLatestProjects(latest);
     }, []);
 
     return (

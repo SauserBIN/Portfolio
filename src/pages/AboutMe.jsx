@@ -165,6 +165,15 @@ const AboutMe = () => {
                             Blender 프로그램을 활용하여 GLTF파일에 애니메이션 적용 후 웹에 적용할 수 있습니다.
                         </p>
                         <div className='tag-button_wrap'>
+                            <span className='tag-button'>Bootstrap</span>
+                        </div>
+                        <p className='write_size'>
+                            Bootstrap 프레임워크를 활용하여 브라우저 호환성에 맞게 빠른 디자인이 가능하고,
+                        </p>
+                        <p className='write_size'>
+                            효율적인 제작을 할 수 있습니다. CSS 변수 조정으로 커스텀도 가능합니다.
+                        </p>
+                        <div className='tag-button_wrap'>
                             <span className='tag-button'>관심있는 기능</span>
                         </div>
                         <p className='write_size'>

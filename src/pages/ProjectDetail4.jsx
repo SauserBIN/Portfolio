@@ -25,6 +25,10 @@ const ProjectDetail4 = () => {
 	const handleBackToList = () => {
 		navigate('/project');
 	};
+	
+	const handleScrollToTop = () => {
+		window.scrollTo(0, 0);
+	  };
 
 	// 이전글과 다음글 찾기
 	const currentIndex = projectData.findIndex((p) => p.id === project.id);
@@ -109,7 +113,7 @@ const ProjectDetail4 = () => {
 					<div className="previous_wrap">
 						<p className='cp'>이전글</p>
 						<div className='space2'></div>
-						<Link to={`/project-detail/${previousProject.id}`}>
+						<Link to={`/project-detail/${previousProject.id}`} onClick={handleScrollToTop}>
 							<div className='flex'>
 								<img src={previousProject.image} alt={previousProject.title} className="BFimage" />
 								<div className='BFtext_wrap'>
@@ -125,7 +129,7 @@ const ProjectDetail4 = () => {
 					<div className="next_wrap">
 						<p className='cp'>다음글</p>
 						<div className='space2'></div>
-						<Link to={`/project-detail/${nextProject.id}`}>
+						<Link to={`/project-detail/${nextProject.id}`} onClick={handleScrollToTop}>
 							<div className='flex'>
 								<img src={nextProject.image} alt={nextProject.title} className="BFimage" />
 								<div className='BFtext_wrap'>

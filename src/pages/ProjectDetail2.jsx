@@ -23,6 +23,10 @@ const ProjectDetail2 = () => {
     navigate('/webcloning');
   };
 
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   // 이전글과 다음글 찾기
   const currentIndex = projectData.findIndex((p) => p.id === project.id);
   const previousProject = currentIndex > 0 ? projectData[currentIndex - 1] : null;
@@ -82,7 +86,7 @@ const ProjectDetail2 = () => {
           <div className="previous_wrap">
             <p className='cp'>이전글</p>
             <div className='space2'></div>
-            <Link to={`/webcloning-detail/${previousProject.id}`}>
+            <Link to={`/webcloning-detail/${previousProject.id}`} onClick={handleScrollToTop}>
               <div className='flex'>
                 <img src={previousProject.image} alt={previousProject.title} className="BFimage" />
                 <div className='BFtext_wrap'>
@@ -98,7 +102,7 @@ const ProjectDetail2 = () => {
           <div className="next_wrap">
             <p className='cp'>다음글</p>
             <div className='space2'></div>
-            <Link to={`/webcloning-detail/${nextProject.id}`}>
+            <Link to={`/webcloning-detail/${nextProject.id}`} onClick={handleScrollToTop}>
               <div className='flex'>
                 <img src={nextProject.image} alt={nextProject.title} className="BFimage" />
                 <div className='BFtext_wrap'>

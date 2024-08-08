@@ -153,7 +153,8 @@
 .skill_box>.write_size:nth-child(20),
 .skill_box>.write_size:nth-child(23),
 .skill_box>.write_size:nth-child(26),
-.skill_box>.write_size:nth-child(29) {
+.skill_box>.write_size:nth-child(29),
+.skill_box>.write_size:nth-child(32) {
 	margin-bottom: 60px;
 }
 
