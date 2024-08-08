@@ -1,0 +1,101 @@
+.detail_page{
+	padding-top: 60px;
+}
+.detail_subtitle{
+	padding: 15px 0 37px 0;
+}
+.project-detail_inner{
+	gap: 50px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.detail_right_wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.detail-image {
+	width: 100%;
+	border-radius: 16px;
+}
+
+.info-section,
+.skills-section,
+.involvement-section {
+	margin-bottom: 20px;
+}
+.info-section{
+	justify-content: space-between;
+}
+.info-section>div:nth-child(2){
+	margin-right: 75px;
+}
+
+.info-label {
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.detail-button {
+	background: var(--detail-button-bg);
+	color: var(--font-purple-white);
+	padding: 5px 10px;
+	border-radius: 16px;
+	font-size: 12px;
+}
+
+.gauge-bar {
+	width: 100%;
+	background: var(--gauge-bar-bg);
+	border-radius: 50px;
+	margin-bottom: 15px;
+	position: relative;
+
+}
+
+.gauge-bar-inner {
+	height: 100%;
+	background: linear-gradient(to right, var(--gauge-bar-gradient-left), var(--gauge-bar-gradient-right));
+	border-radius: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.detail_btn {
+	background-color: #6E31E1;
+	width: 181px;
+	height: 46px;
+	border-radius: 8px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	color: var(--font-purple-white);
+	box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 2px 0px inset;
+}
+
+.links-section{
+	gap: 15px;
+}
+.links-section>a:last-child{
+	margin-right: 111px;
+}
+
+.alphaLine{
+	width: 100%;
+	border: 1px solid rgba(98, 114, 129, 0.1);
+	margin-bottom: 85px	;
+}
+.gauge-bar-label{
+	padding: 10px 0;
+}

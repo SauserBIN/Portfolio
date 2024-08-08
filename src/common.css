@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* 색상 변수 정의 */
+:root {
+	--background-color: #191E22;
+	--font-gray: #B6BEC9;
+	--font-light-gray: #E7E7E7;
+	--font-light-gray-transparent: rgba(231, 231, 231, 0.5);
+	--font-purple-white: #D1D2EB;
+	--gradient-blue-green-left: #478DF5;
+	--gradient-blue-green-right: #298F52;
+	--gradient-blue-white-left: #478DF5;
+	--gradient-blue-white-right: #FFFFFF;
+	--main-button-hover-bg: #A2C5F4;
+	--main-button-border: rgba(255, 255, 255, 0.3);
+	--main-button-hover-border: rgba(162, 197, 244, 0.8);
+	--detail-button-bg: rgba(0, 0, 0, 0.52);
+	--detail-button-active-bg: #000000;
+	--detail-button-font-active: #FFFFFF;
+	--gauge-bar-bg: #627281;
+	--gauge-bar-gradient-left: #7B69E7;
+	--gauge-bar-gradient-right: #7498DE;
+	--gauge-bar-font: #FFFFFF;
+}
+
+/* 전체 레이아웃 */
+body {
+	background-color: var(--background-color);
+	font-family: 'Noto Sans KR', sans-serif;
+	/* 기본 폰트 설정 */
+	color: var(--font-light-gray);
+}
+
+.main_contents {
+	max-width: 1080px;
+	margin: 0 auto;
+	color: var(--font-light-gray);
+}
+
+.mtfont {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.pr {
+	position: relative;
+}
+
+/* 폰트 색상 */
+.font-gray {
+	color: var(--font-gray);
+}
+
+.font-light-gray {
+	color: var(--font-light-gray);
+}
+
+.font-light-gray-transparent {
+	color: var(--font-light-gray-transparent);
+}
+
+.font-purple-white {
+	color: var(--font-purple-white);
+}
+
+.project-content {
+	white-space: pre-line;
+}
+
+/* 폰트 줄띄움 기능 적용 */
+
+.gradient-bg-horizontal {
+	display: inline;
+	background: linear-gradient(to right,
+			var(--gradient-blue-green-left) 0%,
+			var(--gradient-blue-green-left) 30%,
+			var(--gradient-blue-green-right) 70%,
+			var(--gradient-blue-green-right) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradient-bg-vertical {
+	display: inline;
+	background: linear-gradient(to bottom, var(--gradient-blue-white-left) 0%, var(--gradient-blue-white-right) 65%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradient-bg-horizontal-2 {
+	display: inline;
+	background: linear-gradient(to right, var(--gradient-blue-white-left) 50%, var(--gradient-blue-white-right) 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* 폰트 크기 */
+
+.h2 {
+	font-size: 32px;
+}
+
+.mid_title {
+	font-size: 20px;
+}
+
+.h3 {
+	font-size: 22px;
+}
+
+.p {
+	font-size: 16px;
+}
+
+.b14 {
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--font-light-gray);
+}
+
+.ellipsis {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	/* 두 번째 줄까지만 표시 */
+	height: 3em;
+	/* 두 줄의 높이 설정 (예: 1.5em * 2) */
+	line-height: 1.5em;
+	/* 줄 높이 설정 */
+	font-size: 14px;
+	color: var(--font-light-gray);
+}
+
+.flex {
+	display: flex;
+}
+
+/* 메인 페이지 버튼 */
+.main_button {
+	display: flex;
+	padding: 14px 25px;
+	font-size: 16px;
+	border: 1px solid var(--main-button-border);
+	border-radius: 50px;
+	color: #fff;
+}
+
+.main_button>p {
+	margin-left: 15px;
+}
+
+.main-button:hover {
+	color: var(--main-button-hover-bg);
+	border-color: var(--main-button-hover-border);
+}
+
+/* 태그 버튼 */
+.tag-button {
+	font-size: 13px;
+	padding: 6px 10px;
+	background-color: rgb(0 0 0 / 32%);
+	margin-bottom: 18px;
+	border-radius: 50px;
+}
+
+.tag-button_wrap {
+	display: inline-flex;
+	gap: 10px;
+}
+
+/* 디테일 버튼 */
+.detail-button-2 {
+	padding: 6px 10px;
+	background-color: rgba(0, 0, 0, 0.52);
+	font-size: 13px;
+	/* 폰트 색상은 추후 추가 */
+}
+
+/* 게이지 바 */
+.gauge-bar {
+	background-color: var(--gauge-bar-bg);
+	border-radius: 50px;
+	width: 488px;
+	height: 22px;
+	position: relative;
+}
+
+.gauge-bar-inner {
+	background: linear-gradient(to right, var(--gauge-bar-gradient-left) 50%, var(--gauge-bar-gradient-right) 50%);
+	width: 100%;
+	/* 실제 게이지 크기에 맞게 width 조절 */
+	height: 100%;
+	border-radius: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.gauge-bar-inner span {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--gauge-bar-font);
+	font-size: 12px;
+}
+
+/* 디테일 전역 css */
+/* 공통 스타일 */
+.main_contents {
+	max-width: 1080px;
+	margin: 0 auto;
+	/* padding: 20px; */
+  }
+  
+  /* 텍스트 스타일 */
+  .cp {
+	font-size: 16px;
+	line-height: 1.5;
+  }
+  
+  .cb {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 10px;
+  }
+  
+  .cbl {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 10px;
+  }
+  
+  /* 이미지 스타일 */
+  .common-img {
+	border-radius: 20px;
+	border: 5px solid #fff;
+	display: block;
+	max-width: 75%;
+	height: auto;
+	margin-bottom: 10px;
+  }
+  
+  /* 줄띄움 용도 */
+  .space {
+	height: 22px;
+  }
+  .space2{
+	height: 44px;
+  }
+  .turn_list_btn{
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: black;
+	color: var(--font-light-gray);
+	text-decoration: none;
+	transition: background 0.3s ease;
+	cursor: pointer;
+	margin-top: 20px;
+  }
+  .BFimage{
+	width: 185px;
+	height: 121px;
+  }
+  .BFtext_wrap{
+	margin-left: 38px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+
+  .impact{
+	color: #00FFD1;
+  }

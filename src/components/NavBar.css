@@ -1,0 +1,41 @@
+/* components/NavBar.css */
+.navbar {
+    position: fixed;
+    width: 100%;
+    line-height: 70px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgb(158 158 158 / 10%);
+    transition: top 0.3s, backdrop-filter 0.3s, background-color 0.3s;
+}
+
+.navbar.hidden {
+    top: -70px;
+}
+
+.navbar.visible {
+    top: 0;
+}
+
+.navbar.no-blur {
+    backdrop-filter: none;
+    background: rgba(0, 0, 0, 0.9); /* 투명도 유지 */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar li a {
+    color: inherit;
+    text-decoration: none;
+    color: var(--font-gray);
+}
+
+.nav_item > a {
+    margin-left: 30px;    
+}

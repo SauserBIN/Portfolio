@@ -1,0 +1,12 @@
+.sub_header{
+	height: 442px;
+	background-image: url(../assets/SubHeaderImage.png);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.sub_header_inner{
+	width: 1080px;
+	text-align: left;
+	margin: 0 auto;
+}

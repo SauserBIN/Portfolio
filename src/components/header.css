@@ -1,0 +1,141 @@
+/* header.css */
+
+/* 전체 페이지의 높이를 설정하고 배경 이미지를 추가 */
+.home_page {
+    height: 100vh;
+    background-image: url(../assets/MainHeaderImage.png);
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    background-size: cover;
+    background-position: center;
+}
+.main_button:hover,
+.project_box:hover {
+    color: #FFF; /* 텍스트와 아이콘 색상 변경 */
+    background-color: rgba(255, 255, 255, 0.1); /* 배경색 변경, 필요에 따라 조정 */
+    border-color: #FFF; /* 테두리 색상 변경 */
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s; /* 부드러운 전환 효과 */
+}
+
+.main_button:hover img,
+.project_box:hover img {
+    filter: brightness(0) invert(1); /* 흰색으로 변경 */
+    transition: filter 0.3s; /* 부드러운 전환 효과 */
+}
+
+.main_button img,
+.project_box img {
+    transition: filter 0.3s; /* 부드러운 전환 효과 */
+}
+
+.margin_down{
+	margin-top: -20px;
+}
+/* 중앙 정렬을 위한 스타일 */
+.home_page_wrap {
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px; /* 컨텐츠 너비 설정 */
+}
+
+.home_top_p{
+	font-size: 25px;
+	font-weight: bold;
+}
+.home_top_p2{
+	font-size: 72px;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	margin-bottom: -20px;
+}
+.home_top_p2alpha {
+    position: absolute;
+    z-index: 0;
+    bottom: -25px;
+    left: 10px;
+    font-size: 72px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.067), rgba(194, 194, 194, 0.17), rgba(0, 0, 0, 0.29));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.6;
+    transition: all 0.5s cubic-bezier(0.1, 0.45, 0, 1.09) 0s;
+    animation: 1s cubic-bezier(0.1, 0.45, 0, 1.09) 0.7s 1 normal forwards running eVgbzj;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.home_top_p2alpha>span{
+	font-weight: 400;
+}
+.home_top_p2>span{
+	font-weight: 400;
+}
+.home_bottom{
+	justify-content: space-between;
+}
+.home_bottom_left{
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.home_bottom_right{
+	width: 377px;
+	height: 290px;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.icon_about_me{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../assets/aboutMe.png);
+}
+.icon_my_project{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../assets/myProject.png);
+}
+.icon_contact{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../assets/contact.png);
+}
+
+.home_btn_wrap{
+	gap: 15px;
+	justify-content: end;
+	padding-right: 30px;
+}
+
+.project_box{
+	width: 100%;
+	height: 114px;
+	background-color: rgba(0, 0, 0, 0.02);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 8px;
+	padding: 10px 15px;
+}
+.project_box:nth-child(2){
+	margin-bottom: 45px;
+}
+
+.home_bottom_right>p{
+	margin-bottom: 15px;
+}
+.project_box_inner{
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+.time{
+	font-size: 14px;
+	color: rgba(231, 231, 231, 0.7);
+	
+}

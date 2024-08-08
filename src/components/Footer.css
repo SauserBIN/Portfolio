@@ -1,0 +1,20 @@
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--font-light-gray);
+}
+.footer-content{
+    height: 245px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-contact p,
+.footer-text p {
+    margin: 5px 0;
+}
+
+.alphaFont{
+    color: var(--font-light-gray-transparent);
+}

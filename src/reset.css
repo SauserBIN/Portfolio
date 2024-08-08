@@ -1,0 +1,83 @@
+/* reset.css */
+
+/* 박스 모델을 일관성 있게 설정 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 기본 여백 제거 */
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+dl, dd, ol, ul, figure, hr, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* 기본 글꼴 설정 */
+body {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+/* 리스트 스타일 제거 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 앵커 태그 기본 스타일 제거 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 이미지, 비디오 등 미디어 태그의 최대 너비를 부모 요소에 맞춤 */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 폼 요소 기본 스타일 제거 */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* 테이블 기본 스타일 제거 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* HTML5 요소를 위한 기본 스타일 설정 */
+main {
+    display: block;
+}
+
+/* 링크가 클릭되었을 때의 기본 스타일 제거 */
+a:focus {
+    outline: none;
+}
+
+/* 버튼의 기본 스타일 제거 */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* 기본 마진 제거 */
+body {
+    margin: 0;
+}
+
+/* 기본 폰트 사이즈 설정 */
+html {
+    font-size: 100%;
+}
+

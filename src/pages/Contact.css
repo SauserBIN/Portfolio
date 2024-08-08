@@ -1,0 +1,165 @@
+.contact_page {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.profile_section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.profile_image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile_name {
+    font-size: 2rem;
+    color: var(--font-light-gray);
+}
+
+.contact_info_section {
+    flex: 2;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.contact_header {
+    text-align: start;
+    margin-bottom: 40px;
+}
+
+.contact_title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact_intro {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.contact_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact_card {
+    background: var(--background-color);
+    border: 1px solid rgba(48, 56, 64, 0.5);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow-style);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_card:hover {
+    transform: translateY(-10px);
+}
+
+.contact_card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.contact_card:nth-child(3) img {
+    height: auto;
+}
+
+.contact_card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact_card p {
+    margin-bottom: 10px;
+}
+
+.contact_link {
+    text-decoration: none;
+    color: var(--font-link);
+}
+
+.contact_link:hover {
+    text-decoration: underline;
+}
+
+.about_my_name {
+    height: 300px;
+    border-radius: 16px;
+    margin-bottom: 48px;
+    background: var(--background-color);
+    border: 1px solid rgba(48, 56, 64, 0.5);
+    box-shadow: var(--box-shadow-style);
+    margin-right: 32px;
+    padding: 32px;
+    max-width: 272px;
+    width: 24%;
+    flex-shrink: 0;
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -48px;
+}
+
+.profile_radio {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    border: 5px solid #515867;
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 20px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.profile_radio > img {
+    width: 100%;
+    height: 62px;
+    border-radius: 100%;
+}
+
+.profile_radio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    border: 3px solid #515867;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 80px;
+    background: rgb(127, 127, 127);
+}
+
+.location_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.location_wrap > span {
+    align-items: center;
+    margin: 18px 0 35px 0;
+}
+
+.my_job {
+    font-size: 13px;
+}
+
+.contact_m{
+    /* margin-left: 20px; */
+}
