@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // AOS CSS 파일 임포트
 import NavBar from './components/NavBar';
@@ -24,24 +24,24 @@ const App = () => {
   }, []);
 
   return (
-<Router basename="/Portfolio/">
-  <NavBar />
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<AboutMe />} />
-    <Route path="/project" element={<Project />} />
-    <Route path="/webcloning-detail/1" element={<ProjectDetail1 />} />
-    <Route path="/webcloning-detail/2" element={<ProjectDetail2 />} />
-    <Route path="/webcloning-detail/3" element={<ProjectDetail3 />} />
-    <Route path="/project-detail/4" element={<ProjectDetail4 />} />
-    <Route path="/project-detail/5" element={<ProjectDetail5 />} />
-    <Route path="/project-detail/6" element={<ProjectDetail6 />} />
-    <Route path="/project-detail/7" element={<ProjectDetail7 />} />
-    <Route path="/webcloning" element={<WebCloning />} />
-    <Route path="/webcloning-detail/:id" element={<WebCloningDetail />} />
-    <Route path="/contact" element={<Contact />} />
-  </Routes>
-</Router>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/webcloning-detail/1" element={<ProjectDetail1 />} />
+        <Route path="/webcloning-detail/2" element={<ProjectDetail2 />} />
+        <Route path="/webcloning-detail/3" element={<ProjectDetail3 />} />
+        <Route path="/project-detail/4" element={<ProjectDetail4 />} />
+        <Route path="/project-detail/5" element={<ProjectDetail5 />} />
+        <Route path="/project-detail/6" element={<ProjectDetail6 />} />
+        <Route path="/project-detail/7" element={<ProjectDetail7 />} />
+        <Route path="/webcloning" element={<WebCloning />} />
+        <Route path="/webcloning-detail/:id" element={<WebCloningDetail />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
 };
 
